@@ -1,0 +1,22 @@
+{
+  "name": "instagram-api-fork",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon -e js,json,graphql"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-express": "^2.9.15",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "graphql": "^14.5.8",
+    "mongodb": "^3.4.1",
+    "node-fetch": "^2.6.0",
+    "nodemon": "^2.0.2"
+  }
+}

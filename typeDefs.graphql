@@ -1,0 +1,27 @@
+scalar DateTime
+type Query{
+    photoCount:Int!
+    userCount:Int!
+    me:User
+}
+type Mutation{
+    githubAuth(code:String!):Payload!
+}
+type User{
+    id:ID!
+    githubLogin:String!
+    name:String!
+    avatar:String!
+}
+type Payload{
+    user:User!
+    token:String!
+}
+type Photo{
+    id:ID!
+    name:String!
+    description:String
+    url:String!
+    postedBy:User!
+    createAt:DateTime!
+}
